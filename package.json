@@ -6,7 +6,7 @@
   "repository": "GoogleCloudPlatform/cloud-trace-nodejs",
   "scripts": {
     "test": "./bin/run-test.sh",
-    "system-test": "mocha --no-timeouts system-test/*.js",
+    "system-test": "mocha --timeout 60000 --trace-warnings system-test/*.js",
     "changelog": "./bin/run-changelog.sh",
     "coverage": "./bin/run-test.sh -c",
     "bump": "./bin/run-bump.sh",
